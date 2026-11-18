@@ -150,3 +150,27 @@ required dates. Excluded records will be reported.
 Sales calculations include all delivered orders with
 item records. Delivery-time calculations additionally
 require valid delivery dates.
+
+## Product category findings
+
+- Health and beauty led merchandise value at 1,233,131.72,
+  representing 9.33% of the total.
+- The top five categories contributed 39.83%.
+- 610 products had no category and 13 products lacked
+  an English translation.
+- Explicit fallback labels retained these records.
+- Unknown category contributed 170,726.63, or 1.29%.
+
+## Sales by customer state
+
+| State | Merchandise value | Sales share |
+|---|---:|---:|
+| SP | 5,067,633.16 | 38.33% |
+| RJ | 1,759,651.13 | 13.31% |
+| MG | 1,552,481.83 | 11.74% |
+
+These three states contributed 63.38% of merchandise value.
+
+RJ contributed 13.31% of merchandise value and had a
+12.11% late-delivery rate among eligible delivery orders,
+making it a priority for further investigation.
