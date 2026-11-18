@@ -82,5 +82,15 @@ to customer delivery, including fractional days.
 ### Planned analysis rule
 Delivery metrics will use delivered orders with valid
 required dates. Excluded records will be reported.
+## Monthly delivery findings
 
+- March 2018 recorded 1,328 late orders among 7,003
+  eligible orders: a late-delivery rate of 18.96%.
+- This was 12.19 percentage points above the overall
+  late-delivery rate of 6.77%.
+- September 2016 recorded 100% late delivery, but had
+  only one eligible order, limiting interpretation.
+- Months are based on purchase date.
+- Further analysis is needed to investigate the
+  locations and product categories associated with delays.
 
