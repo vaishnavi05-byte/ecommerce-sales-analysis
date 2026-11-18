@@ -1,7 +1,7 @@
 # E-commerce Sales and Delivery Analysis
 
 ## Project status
-In progress — currently setting up the project.
+In progress — orders imported and initial validation completed.
 
 ## Overview
 This personal portfolio project explores historical
@@ -41,4 +41,27 @@ and checked.
 - Unique order IDs: 99,441
 - Missing order IDs: 0
 - Missing customer IDs: 0
-- Date and order-status checks are still pending.
+
+## Orders data quality checks
+
+| Check | Result |
+|---|---:|
+| Imported rows | 99,441 |
+| Unique order IDs | 99,441 |
+| Missing order IDs | 0 |
+| Missing customer IDs | 0 |
+| Missing actual delivery dates | 2,965 |
+| Missing purchase dates | 0 |
+| Missing estimated delivery dates | 0 |
+| Unexpected formats across the three checked date fields | 0 |
+| Actual deliveries before purchase | 0 |
+| Estimated delivery dates before purchase date | 0 |
+
+### Flagged inconsistencies
+- 8 delivered orders have no actual delivery date.
+- 6 canceled orders have an actual delivery date.
+- These records are preserved in the raw table.
+
+### Planned analysis rule
+Delivery metrics will use delivered orders with valid
+required dates. Excluded records will be reported.
