@@ -35,3 +35,10 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 ## Results
 Results will be added after the analysis is completed
 and checked.
+
+## Initial orders data checks
+- Imported rows: 99,441
+- Unique order IDs: 99,441
+- Missing order IDs: 0
+- Missing customer IDs: 0
+- Date and order-status checks are still pending.
