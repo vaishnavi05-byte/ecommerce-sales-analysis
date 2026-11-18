@@ -33,8 +33,25 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 - Findings, limitations, and recommendations
 
 ## Results
-Results will be added after the analysis is completed
-and checked.
+### Delivery performance
+
+| Metric | Result |
+|---|---:|
+| Eligible delivered orders | 96,470 |
+| Late orders | 6,534 |
+| On-time orders | 89,936 |
+| Late-delivery rate | 6.77% |
+| Average purchase-to-delivery time | 12.56 days |
+
+Scope: Delivered orders with the required dates and valid
+date sequence. Eight delivered orders with missing actual
+delivery dates were excluded.
+
+Late means the actual delivery calendar date was after
+the estimated delivery calendar date.
+
+Average delivery time measures elapsed time from purchase
+to customer delivery, including fractional days.
 
 ## Initial orders data checks
 - Imported rows: 99,441
@@ -59,9 +76,11 @@ and checked.
 
 ### Flagged inconsistencies
 - 8 delivered orders have no actual delivery date.
-- 6 canceled orders have an actual delivery date.
+- 6 cancelled orders have an actual delivery date.
 - These records are preserved in the raw table.
 
 ### Planned analysis rule
 Delivery metrics will use delivered orders with valid
 required dates. Excluded records will be reported.
+
+
