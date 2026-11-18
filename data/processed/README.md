@@ -13,3 +13,13 @@ Generated using: sql/06_delivery_by_month.sql
 
 Dataset source:
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+## State delivery performance
+state_delivery_performance.csv contains one row per
+customer state code for eligible delivered orders.
+
+Generated using: sql/10_delivery_by_state.sql
+
+The delivery metrics use the same definitions as the
+monthly export. customer_state identifies the customer's
+location.
