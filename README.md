@@ -120,3 +120,33 @@ required dates. Excluded records will be reported.
 
 [View state delivery results](data/processed/state_delivery_performance.csv)
 
+## Sales analysis
+
+### Data validation
+- Imported 112,650 items across 98,666 order IDs.
+- No missing required item identifiers.
+- No missing or unexpected price or freight formats.
+- Every item matched an order.
+- All 96,478 delivered orders had item records.
+
+### Delivered-order results
+
+| Metric | Result |
+|---|---:|
+| Delivered orders | 96,478 |
+| Items sold | 110,197 |
+| Merchandise sales value | 13,221,498.11 |
+| Freight value | 2,198,275.64 |
+| Average order value, excluding freight | 137.04 |
+
+### Monthly findings
+- November 2017 merchandise value was 987,765.37,
+  up 52.37% from October.
+- Delivered order count increased 62.77%, while AOV
+  declined from 144.76 to 135.51.
+- May 2018 generated merchandise value of 977,544.69
+  from 6,749 delivered orders, with AOV of 144.84.
+
+Sales calculations include all delivered orders with
+item records. Delivery-time calculations additionally
+require valid delivery dates.
