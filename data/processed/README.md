@@ -32,10 +32,25 @@ location.
 Generated using:
 - sql/15_sales_performance.sql
 - sql/16_sales_by_month.sql
-
 Scope: Orders with delivered status.
-
 Merchandise sales value is the sum of item prices.
 Freight is reported separately.
+## Category and state sales exports
+
+- category_sales_performance.csv:
+  Generated using sql/21_category_sales.sql.
+  Contains category ranks, item counts, order counts,
+  merchandise value, and sales shares.
+
+- state_sales_performance.csv:
+  Generated using sql/22_sales_by_state.sql.
+  Contains delivered-order counts, item counts,
+  merchandise value, AOV, and sales shares by customer state.
+
+Both exports use delivered orders and exclude freight
+from merchandise value.
+
+Category order counts may overlap because one order can
+contain products from multiple categories.
 Average order value excludes freight and is calculated
-at order level.
+at the order level.
