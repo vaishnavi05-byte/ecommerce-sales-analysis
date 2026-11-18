@@ -23,3 +23,19 @@ Generated using: sql/10_delivery_by_state.sql
 The delivery metrics use the same definitions as the
 monthly export. customer_state identifies the customer's
 location.
+
+## Sales exports
+
+- overall_sales_performance.csv: one summary row.
+- monthly_sales_performance.csv: one row per purchase month.
+
+Generated using:
+- sql/15_sales_performance.sql
+- sql/16_sales_by_month.sql
+
+Scope: Orders with delivered status.
+
+Merchandise sales value is the sum of item prices.
+Freight is reported separately.
+Average order value excludes freight and is calculated
+at order level.
