@@ -94,3 +94,29 @@ required dates. Excluded records will be reported.
 - Further analysis is needed to investigate the
   locations and product categories associated with delays.
 
+  ## Customer and join validation
+
+- Customer records: 99,441.
+- Distinct shoppers: 96,096.
+- No missing customer IDs, shopper IDs, or states.
+- Joining orders to customers preserved 99,441 orders.
+- No orders lacked a matching customer record.
+
+## State delivery findings
+
+| State | Eligible orders | Late orders | Late rate |
+|---|---:|---:|---:|
+| SP | 40,494 | 1,820 | 4.49% |
+| RJ | 12,350 | 1,495 | 12.11% |
+| MA | 717 | 125 | 17.43% |
+| AL | 397 | 85 | 21.41% |
+
+- RJ combined substantial order volume with an above-average
+  late-delivery rate.
+- SP had the largest number of late orders, despite a
+  below-average late rate.
+- SP and RJ together accounted for 50.73% of late orders.
+- Further analysis is needed to explain these differences.
+
+[View state delivery results](data/processed/state_delivery_performance.csv)
+
