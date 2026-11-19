@@ -1,7 +1,7 @@
 # E-commerce Sales and Delivery Analysis
 
 ## Project status
-In progress — orders imported and initial validation completed.
+SQL analysis and interactive Excel dashboard completed.
 
 ## Overview
 This personal portfolio project explores historical
@@ -174,3 +174,49 @@ These three states contributed 63.38% of merchandise value.
 RJ contributed 13.31% of merchandise value and had a
 12.11% late-delivery rate among eligible delivery orders,
 making it a priority for further investigation.
+
+## Interactive Excel Dashboard
+
+![E-commerce dashboard overview](dashboard/dashboard_overview.png)
+
+[Open the Excel workbook file](dashboard/Ecommerce_Analysis_Dashboard.xlsx)
+
+The dashboard combines five headline metrics with monthly sales and Top 10 customer-state charts. Customer-state and purchase-year slicers filter the metrics and charts together.
+
+### How to view the dashboard
+
+1. At the top of this repository, select Code → Download ZIP.
+2. Extract the downloaded ZIP.
+3. Open dashboard/Ecommerce_Analysis_Dashboard.xlsx in desktop Microsoft Excel.
+4. Use the Customer state and Purchase year slicers to explore the results.
+5. Use each slicer's clear-filter button to return to the overall view.
+
+The workbook contains saved data, so the dashboard can be explored before configuring a refresh.
+
+### Metric definitions
+
+- Merchandise sales value: sum of item prices for delivered orders, excluding freight.
+- Delivered orders: 96,478 orders in the unfiltered dataset.
+- Average order value: merchandise sales value divided by delivered orders.
+- Late-delivery rate: late orders divided by orders eligible for delivery analysis. Delivery is late when its calendar date falls after the estimated delivery date.
+- Average delivery days: total eligible delivery seconds divided by eligible orders and 86,400.
+
+Delivery analysis includes 96,470 eligible orders. Eight delivered orders with missing actual delivery dates remain in sales totals and are excluded from delivery metrics.
+
+### Refresh on another computer
+
+The Power Query source currently points to the CSV location on the original computer. To configure it:
+
+1. In Excel, select Data → Queries & Connections.
+2. Right-click OrdersData and select Edit.
+3. In Power Query Editor, select Home → Advanced Editor.
+4. Find File.Contents(...) and replace only the file path inside its quotation marks with the full local path to data/processed/dashboard_orders.csv.
+5. Select Done → Close & Load.
+6. In Excel, select Data → Refresh All.
+
+Refreshing Excel reloads the CSV export.
+
+### Dashboard source files
+
+- [Order-level CSV](data/processed/dashboard_orders.csv)
+- [SQL dashboard view](sql/23_create_dashboard_view.sql)
