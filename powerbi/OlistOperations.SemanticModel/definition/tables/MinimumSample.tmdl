@@ -1,0 +1,10 @@
+table MinimumSample
+
+	column Orders
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Orders
+
+	partition MinimumSample = m
+		mode: import
+		source = #table(type table [Orders=Int64.Type],{{25},{100},{500},{1000}})

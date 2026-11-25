@@ -1,0 +1,557 @@
+[
+  {
+    "rows": [
+      {
+        "[Orders]": 96478,
+        "[Sales]": 13221498.11,
+        "[Items]": 110197,
+        "[Eligible]": 96470,
+        "[Late]": 6534,
+        "[Missing]": 8,
+        "[Days]": 12.558217098051976,
+        "[AOV]": 137.0415857501192,
+        "[Units]": 1.1421982213561641,
+        "[LateRate]": 0.06773090079817559,
+        "[GapOrders]": 1710.5
+      }
+    ]
+  },
+  {
+    "rows": [
+      {
+        "Orders[customer_state]": "SP",
+        "[Orders]": 40501,
+        "[Sales]": 5067633.16,
+        "[Eligible]": 40494,
+        "[Late]": 1820,
+        "[LateRate]": 0.044944930113103174,
+        "[Days]": 8.761385996084925
+      },
+      {
+        "Orders[customer_state]": "RS",
+        "[Orders]": 5345,
+        "[Sales]": 728897.47,
+        "[Eligible]": 5344,
+        "[Late]": 325,
+        "[LateRate]": 0.06081586826347305,
+        "[Days]": 15.300276192406853
+      },
+      {
+        "Orders[customer_state]": "GO",
+        "[Orders]": 1957,
+        "[Sales]": 282836.7,
+        "[Eligible]": 1957,
+        "[Late]": 128,
+        "[LateRate]": 0.06540623403168115,
+        "[Days]": 15.606338535456764
+      },
+      {
+        "Orders[customer_state]": "MG",
+        "[Orders]": 11354,
+        "[Sales]": 1552481.83,
+        "[Eligible]": 11354,
+        "[Late]": 519,
+        "[LateRate]": 0.04571076272679232,
+        "[Days]": 12.008665646060452
+      },
+      {
+        "Orders[customer_state]": "RJ",
+        "[Orders]": 12350,
+        "[Sales]": 1759651.13,
+        "[Eligible]": 12350,
+        "[Late]": 1495,
+        "[LateRate]": 0.12105263157894737,
+        "[Days]": 15.30943754217274
+      },
+      {
+        "Orders[customer_state]": "PR",
+        "[Orders]": 4923,
+        "[Sales]": 666063.51,
+        "[Eligible]": 4923,
+        "[Late]": 199,
+        "[LateRate]": 0.04042250660166565,
+        "[Days]": 11.991582227413275
+      },
+      {
+        "Orders[customer_state]": "MT",
+        "[Orders]": 886,
+        "[Sales]": 152191.62,
+        "[Eligible]": 886,
+        "[Late]": 53,
+        "[LateRate]": 0.05981941309255079,
+        "[Days]": 18.05575601172561
+      },
+      {
+        "Orders[customer_state]": "PA",
+        "[Orders]": 946,
+        "[Sales]": 174470.59,
+        "[Eligible]": 946,
+        "[Late]": 106,
+        "[LateRate]": 0.11205073995771671,
+        "[Days]": 23.77291691136168
+      },
+      {
+        "Orders[customer_state]": "SC",
+        "[Orders]": 3546,
+        "[Sales]": 507012.13,
+        "[Eligible]": 3546,
+        "[Late]": 291,
+        "[LateRate]": 0.08206429780033841,
+        "[Days]": 14.954782876767771
+      },
+      {
+        "Orders[customer_state]": "PE",
+        "[Orders]": 1593,
+        "[Sales]": 251889.49,
+        "[Eligible]": 1593,
+        "[Late]": 153,
+        "[LateRate]": 0.096045197740113,
+        "[Days]": 18.448322994408407
+      },
+      {
+        "Orders[customer_state]": "RN",
+        "[Orders]": 474,
+        "[Sales]": 82105.66,
+        "[Eligible]": 474,
+        "[Late]": 44,
+        "[LateRate]": 0.09282700421940929,
+        "[Days]": 19.27815620604782
+      },
+      {
+        "Orders[customer_state]": "CE",
+        "[Orders]": 1279,
+        "[Sales]": 219757.38,
+        "[Eligible]": 1279,
+        "[Late]": 176,
+        "[LateRate]": 0.1376075058639562,
+        "[Days]": 21.26657863492891
+      },
+      {
+        "Orders[customer_state]": "BA",
+        "[Orders]": 3256,
+        "[Sales]": 493584.14,
+        "[Eligible]": 3256,
+        "[Late]": 396,
+        "[LateRate]": 0.12162162162162163,
+        "[Days]": 19.335465824489262
+      },
+      {
+        "Orders[customer_state]": "ES",
+        "[Orders]": 1995,
+        "[Sales]": 268643.45,
+        "[Eligible]": 1995,
+        "[Late]": 214,
+        "[LateRate]": 0.10726817042606517,
+        "[Days]": 15.789307110368513
+      },
+      {
+        "Orders[customer_state]": "DF",
+        "[Orders]": 2080,
+        "[Sales]": 296498.41,
+        "[Eligible]": 2080,
+        "[Late]": 118,
+        "[LateRate]": 0.05673076923076923,
+        "[Days]": 12.967568108974358
+      },
+      {
+        "Orders[customer_state]": "MA",
+        "[Orders]": 717,
+        "[Sales]": 117009.38,
+        "[Eligible]": 717,
+        "[Late]": 125,
+        "[LateRate]": 0.17433751743375175,
+        "[Days]": 21.572976474120566
+      },
+      {
+        "Orders[customer_state]": "AL",
+        "[Orders]": 397,
+        "[Sales]": 78855.72,
+        "[Eligible]": 397,
+        "[Late]": 85,
+        "[LateRate]": 0.2141057934508816,
+        "[Days]": 24.543855361974064
+      },
+      {
+        "Orders[customer_state]": "SE",
+        "[Orders]": 335,
+        "[Sales]": 56574.19,
+        "[Eligible]": 335,
+        "[Late]": 51,
+        "[LateRate]": 0.15223880597014924,
+        "[Days]": 21.519788280818133
+      },
+      {
+        "Orders[customer_state]": "PI",
+        "[Orders]": 476,
+        "[Sales]": 84721.0,
+        "[Eligible]": 476,
+        "[Late]": 66,
+        "[LateRate]": 0.13865546218487396,
+        "[Days]": 19.45709826291628
+      },
+      {
+        "Orders[customer_state]": "PB",
+        "[Orders]": 517,
+        "[Sales]": 112586.82,
+        "[Eligible]": 517,
+        "[Late]": 54,
+        "[LateRate]": 0.10444874274661509,
+        "[Days]": 20.426767609606706
+      },
+      {
+        "Orders[customer_state]": "RR",
+        "[Orders]": 41,
+        "[Sales]": 7057.47,
+        "[Eligible]": 41,
+        "[Late]": 5,
+        "[LateRate]": 0.12195121951219512,
+        "[Days]": 29.387546014001806
+      },
+      {
+        "Orders[customer_state]": "AC",
+        "[Orders]": 80,
+        "[Sales]": 15930.97,
+        "[Eligible]": 80,
+        "[Late]": 3,
+        "[LateRate]": 0.0375,
+        "[Days]": 21.035712962962965
+      },
+      {
+        "Orders[customer_state]": "MS",
+        "[Orders]": 701,
+        "[Sales]": 115429.97,
+        "[Eligible]": 701,
+        "[Late]": 68,
+        "[LateRate]": 0.09700427960057062,
+        "[Days]": 15.618319018465684
+      },
+      {
+        "Orders[customer_state]": "TO",
+        "[Orders]": 274,
+        "[Sales]": 48402.51,
+        "[Eligible]": 274,
+        "[Late]": 27,
+        "[LateRate]": 0.09854014598540146,
+        "[Days]": 17.65806260982698
+      },
+      {
+        "Orders[customer_state]": "RO",
+        "[Orders]": 243,
+        "[Sales]": 45682.76,
+        "[Eligible]": 243,
+        "[Late]": 7,
+        "[LateRate]": 0.02880658436213992,
+        "[Days]": 19.37203651310776
+      },
+      {
+        "Orders[customer_state]": "AM",
+        "[Orders]": 145,
+        "[Sales]": 22155.84,
+        "[Eligible]": 145,
+        "[Late]": 4,
+        "[LateRate]": 0.027586206896551724,
+        "[Days]": 26.42599090038314
+      },
+      {
+        "Orders[customer_state]": "AP",
+        "[Orders]": 67,
+        "[Sales]": 13374.81,
+        "[Eligible]": 67,
+        "[Late]": 2,
+        "[LateRate]": 0.029850746268656716,
+        "[Days]": 27.185067716970703
+      }
+    ]
+  },
+  {
+    "rows": [
+      {
+        "Orders[purchase_month]": "2016-09",
+        "[Orders]": 1,
+        "[Sales]": 134.97,
+        "[Eligible]": 1,
+        "[Late]": 1,
+        "[Days]": 54.81319444444444
+      },
+      {
+        "Orders[purchase_month]": "2016-10",
+        "[Orders]": 265,
+        "[Sales]": 40325.11,
+        "[Eligible]": 265,
+        "[Late]": 2,
+        "[Days]": 19.600558787561145
+      },
+      {
+        "Orders[purchase_month]": "2016-12",
+        "[Orders]": 1,
+        "[Sales]": 10.9,
+        "[Eligible]": 1,
+        "[Late]": 0,
+        "[Days]": 4.693020833333334
+      },
+      {
+        "Orders[purchase_month]": "2017-01",
+        "[Orders]": 750,
+        "[Sales]": 111798.36,
+        "[Eligible]": 750,
+        "[Late]": 22,
+        "[Days]": 12.647043518518519
+      },
+      {
+        "Orders[purchase_month]": "2017-02",
+        "[Orders]": 1653,
+        "[Sales]": 234223.4,
+        "[Eligible]": 1653,
+        "[Late]": 49,
+        "[Days]": 13.168825248986131
+      },
+      {
+        "Orders[purchase_month]": "2017-03",
+        "[Orders]": 2546,
+        "[Sales]": 359198.85,
+        "[Eligible]": 2546,
+        "[Late]": 116,
+        "[Days]": 12.951184487831311
+      },
+      {
+        "Orders[purchase_month]": "2017-04",
+        "[Orders]": 2303,
+        "[Sales]": 340669.68,
+        "[Eligible]": 2303,
+        "[Late]": 151,
+        "[Days]": 14.917912500402052
+      },
+      {
+        "Orders[purchase_month]": "2017-05",
+        "[Orders]": 3546,
+        "[Sales]": 489338.25,
+        "[Eligible]": 3545,
+        "[Late]": 106,
+        "[Days]": 11.322362975369586
+      },
+      {
+        "Orders[purchase_month]": "2017-06",
+        "[Orders]": 3135,
+        "[Sales]": 421923.37,
+        "[Eligible]": 3135,
+        "[Late]": 95,
+        "[Days]": 12.011572704383012
+      },
+      {
+        "Orders[purchase_month]": "2017-07",
+        "[Orders]": 3872,
+        "[Sales]": 481604.52,
+        "[Eligible]": 3872,
+        "[Late]": 108,
+        "[Days]": 11.592732387200604
+      },
+      {
+        "Orders[purchase_month]": "2017-08",
+        "[Orders]": 4193,
+        "[Sales]": 554699.7,
+        "[Eligible]": 4193,
+        "[Late]": 122,
+        "[Days]": 11.147124655510506
+      },
+      {
+        "Orders[purchase_month]": "2017-09",
+        "[Orders]": 4150,
+        "[Sales]": 607399.67,
+        "[Eligible]": 4150,
+        "[Late]": 182,
+        "[Days]": 11.85100652889335
+      },
+      {
+        "Orders[purchase_month]": "2017-10",
+        "[Orders]": 4478,
+        "[Sales]": 648247.65,
+        "[Eligible]": 4478,
+        "[Late]": 187,
+        "[Days]": 11.856699698526128
+      },
+      {
+        "Orders[purchase_month]": "2017-11",
+        "[Orders]": 7289,
+        "[Sales]": 987765.37,
+        "[Eligible]": 7288,
+        "[Late]": 904,
+        "[Days]": 15.161131699241777
+      },
+      {
+        "Orders[purchase_month]": "2017-12",
+        "[Orders]": 5513,
+        "[Sales]": 726033.19,
+        "[Eligible]": 5513,
+        "[Late]": 411,
+        "[Days]": 15.394918530107288
+      },
+      {
+        "Orders[purchase_month]": "2018-01",
+        "[Orders]": 7069,
+        "[Sales]": 924645.0,
+        "[Eligible]": 7069,
+        "[Late]": 403,
+        "[Days]": 14.080562613956083
+      },
+      {
+        "Orders[purchase_month]": "2018-02",
+        "[Orders]": 6555,
+        "[Sales]": 826437.13,
+        "[Eligible]": 6555,
+        "[Late]": 926,
+        "[Days]": 16.945137568155495
+      },
+      {
+        "Orders[purchase_month]": "2018-03",
+        "[Orders]": 7003,
+        "[Sales]": 953356.25,
+        "[Eligible]": 7003,
+        "[Late]": 1328,
+        "[Days]": 16.30141017440938
+      },
+      {
+        "Orders[purchase_month]": "2018-04",
+        "[Orders]": 6798,
+        "[Sales]": 973534.09,
+        "[Eligible]": 6798,
+        "[Late]": 306,
+        "[Days]": 11.499241053673193
+      },
+      {
+        "Orders[purchase_month]": "2018-05",
+        "[Orders]": 6749,
+        "[Sales]": 977544.69,
+        "[Eligible]": 6749,
+        "[Late]": 443,
+        "[Days]": 11.419028935356678
+      },
+      {
+        "Orders[purchase_month]": "2018-06",
+        "[Orders]": 6099,
+        "[Sales]": 856077.86,
+        "[Eligible]": 6096,
+        "[Late]": 71,
+        "[Days]": 9.239216293167347
+      },
+      {
+        "Orders[purchase_month]": "2018-07",
+        "[Orders]": 6159,
+        "[Sales]": 867953.46,
+        "[Eligible]": 6156,
+        "[Late]": 208,
+        "[Days]": 8.958636237154959
+      },
+      {
+        "Orders[purchase_month]": "2018-08",
+        "[Orders]": 6351,
+        "[Sales]": 838576.64,
+        "[Eligible]": 6351,
+        "[Late]": 393,
+        "[Days]": 7.732779720458137
+      }
+    ]
+  },
+  {
+    "rows": [
+      {
+        "Orders[basket_band]": "3-4 items",
+        "[Orders]": 1801,
+        "[Sales]": 467323.65,
+        "[Items]": 5898,
+        "[Late]": 87,
+        "[AOV]": 259.48009439200445,
+        "[Units]": 3.274847307051638
+      },
+      {
+        "Orders[basket_band]": "1 item",
+        "[Orders]": 86843,
+        "[Sales]": 11263605.06,
+        "[Items]": 86843,
+        "[Late]": 6024,
+        "[AOV]": 129.7007825616342,
+        "[Units]": 1.0
+      },
+      {
+        "Orders[basket_band]": "2 items",
+        "[Orders]": 7392,
+        "[Sales]": 1285118.99,
+        "[Items]": 14784,
+        "[Late]": 397,
+        "[AOV]": 173.85267721861473,
+        "[Units]": 2.0
+      },
+      {
+        "Orders[basket_band]": "5+ items",
+        "[Orders]": 442,
+        "[Sales]": 205450.41,
+        "[Items]": 2672,
+        "[Late]": 26,
+        "[AOV]": 464.8199321266968,
+        "[Units]": 6.04524886877828
+      }
+    ]
+  },
+  {
+    "rows": [
+      {
+        "[Orders]": 40501,
+        "[Sales]": 5067633.16,
+        "[Late]": 1820,
+        "[LateRate]": 0.044944930113103174,
+        "[GapOrders]": 0.0
+      }
+    ]
+  },
+  {
+    "rows": [
+      {
+        "Orders[customer_state]": "SP",
+        "[Rate]": 0.044944930113103174
+      },
+      {
+        "Orders[customer_state]": "RS",
+        "[Rate]": 0.06081586826347305
+      },
+      {
+        "Orders[customer_state]": "GO",
+        "[Rate]": 0.06540623403168115
+      },
+      {
+        "Orders[customer_state]": "MG",
+        "[Rate]": 0.04571076272679232
+      },
+      {
+        "Orders[customer_state]": "RJ",
+        "[Rate]": 0.12105263157894737
+      },
+      {
+        "Orders[customer_state]": "PR",
+        "[Rate]": 0.04042250660166565
+      },
+      {
+        "Orders[customer_state]": "SC",
+        "[Rate]": 0.08206429780033841
+      },
+      {
+        "Orders[customer_state]": "PE",
+        "[Rate]": 0.096045197740113
+      },
+      {
+        "Orders[customer_state]": "CE",
+        "[Rate]": 0.1376075058639562
+      },
+      {
+        "Orders[customer_state]": "BA",
+        "[Rate]": 0.12162162162162163
+      },
+      {
+        "Orders[customer_state]": "ES",
+        "[Rate]": 0.10726817042606517
+      },
+      {
+        "Orders[customer_state]": "DF",
+        "[Rate]": 0.05673076923076923
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source": "data\\processed\\dashboard_orders.csv",
+  "source_sha256": "597d73ff114ca8e46d21e2d4dc74ed7bdf34bc8c2b4a93d5205c8fb90b471b49",
+  "orders": 96478,
+  "eligible": 96470,
+  "late": 6534,
+  "merchandise_cents": 1322149811,
+  "items": 110197,
+  "pages": 5,
+  "measures": 18
+}

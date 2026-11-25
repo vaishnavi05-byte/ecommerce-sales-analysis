@@ -1,0 +1,1 @@
+expression DataFolder = "C:\Users\yasha\OneDrive\Documents\ChatGPT\cv prpjects_1\olist-studio\data\powerbi" meta [IsParameterQuery=true,Type="Text",IsParameterQueryRequired=true]

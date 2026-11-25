@@ -1,0 +1,6 @@
+EVALUATE ROW("Orders",[Delivered Orders],"Sales",[Merchandise Sales],"Items",[Items],"Eligible",[Eligible Deliveries],"Late",[Late Orders],"Missing",[Missing Actual Dates],"Days",[Average Delivery Days],"AOV",[Average Order Value],"Units",[Items Per Order],"LateRate",[Late Rate],"GapOrders",[Orders Above Target])
+EVALUATE SUMMARIZECOLUMNS(Orders[customer_state],"Orders",[Delivered Orders],"Sales",[Merchandise Sales],"Eligible",[Eligible Deliveries],"Late",[Late Orders],"LateRate",[Late Rate],"Days",[Average Delivery Days])
+EVALUATE SUMMARIZECOLUMNS(Orders[purchase_month],"Orders",[Delivered Orders],"Sales",[Merchandise Sales],"Eligible",[Eligible Deliveries],"Late",[Late Orders],"Days",[Average Delivery Days])
+EVALUATE SUMMARIZECOLUMNS(Orders[basket_band],"Orders",[Delivered Orders],"Sales",[Merchandise Sales],"Items",[Items],"Late",[Late Orders],"AOV",[Average Order Value],"Units",[Items Per Order])
+EVALUATE CALCULATETABLE(ROW("Orders",[Delivered Orders],"Sales",[Merchandise Sales],"Late",[Late Orders],"LateRate",[Late Rate],"GapOrders",[Orders Above Target]),TREATAS({"SP"},Orders[customer_state]),TREATAS({10},Target[Percent]))
+EVALUATE CALCULATETABLE(SUMMARIZECOLUMNS(Orders[customer_state],"Rate",[Sample Qualified Late Rate]),TREATAS({1000},MinimumSample[Orders]))

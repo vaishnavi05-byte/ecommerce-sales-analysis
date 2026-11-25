@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "numeric_comparisons": 329,
+  "source_orders": 96478,
+  "source_grain": "one delivered order",
+  "actual_engine": "Power BI Desktop local model; saved DAX result sets",
+  "scopes": [
+    "total",
+    "27 states",
+    "purchase months",
+    "basket bands",
+    "SP with 10% target",
+    "minimum-sample guard"
+  ]
+}

@@ -1,0 +1,1325 @@
+{
+  "lineChart": {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+    "name": "1a4873a99e088717eead",
+    "position": {
+      "x": 952,
+      "y": 334,
+      "width": 688,
+      "height": 300,
+      "z": 10,
+      "tabOrder": 10
+    },
+    "visual": {
+      "visualType": "lineChart",
+      "query": {
+        "queryState": {
+          "Category": {
+            "projections": [
+              {
+                "field": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DimDate"
+                      }
+                    },
+                    "Property": "month"
+                  }
+                },
+                "queryRef": "DimDate.month",
+                "nativeQueryRef": "month",
+                "active": true
+              }
+            ]
+          },
+          "Y": {
+            "projections": [
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Contribution After Marketing"
+                  }
+                },
+                "queryRef": "FactOrders.Contribution After Marketing",
+                "nativeQueryRef": "Contribution After Marketing"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Marketing Spend"
+                  }
+                },
+                "queryRef": "FactOrders.Marketing Spend",
+                "nativeQueryRef": "Marketing Spend"
+              }
+            ]
+          }
+        }
+      },
+      "visualContainerObjects": {
+        "title": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "text": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Contribution and spend over time | INR'"
+                  }
+                }
+              },
+              "fontColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#263650'"
+                      }
+                    }
+                  }
+                }
+              },
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "13D"
+                  }
+                }
+              },
+              "fontFamily": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Segoe UI Semibold'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FFFFFF'"
+                      }
+                    }
+                  }
+                }
+              },
+              "transparency": {
+                "expr": {
+                  "Literal": {
+                    "Value": "0D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#DFE4F0'"
+                      }
+                    }
+                  }
+                }
+              },
+              "radius": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "properties": {
+              "top": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "bottom": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "left": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "right": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "drillFilterOtherVisuals": true,
+      "objects": {
+        "categoryAxis": [
+          {
+            "properties": {
+              "showAxisTitle": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "properties": {
+              "showAxisTitle": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "annotations": [
+      {
+        "name": "DecisionStudioBasePosition",
+        "value": "{\"x\": 728, \"y\": 230, \"width\": 688, \"height\": 300, \"z\": 10, \"tabOrder\": 10}"
+      }
+    ]
+  },
+  "card": {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+    "name": "22f6e62edac311c8ed4c",
+    "position": {
+      "x": 600,
+      "y": 208,
+      "width": 336,
+      "height": 106,
+      "z": 10,
+      "tabOrder": 10
+    },
+    "visual": {
+      "visualType": "card",
+      "query": {
+        "queryState": {
+          "Values": {
+            "projections": [
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Contribution After Marketing"
+                  }
+                },
+                "queryRef": "FactOrders.Contribution After Marketing",
+                "nativeQueryRef": "Contribution After Marketing"
+              }
+            ]
+          }
+        }
+      },
+      "visualContainerObjects": {
+        "title": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "text": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'After marketing'"
+                  }
+                }
+              },
+              "fontColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#C9D7EC'"
+                      }
+                    }
+                  }
+                }
+              },
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "13D"
+                  }
+                }
+              },
+              "fontFamily": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Segoe UI Semibold'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#17263D'"
+                      }
+                    }
+                  }
+                }
+              },
+              "transparency": {
+                "expr": {
+                  "Literal": {
+                    "Value": "0D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#17263D'"
+                      }
+                    }
+                  }
+                }
+              },
+              "radius": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "properties": {
+              "top": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "bottom": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "left": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "right": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "drillFilterOtherVisuals": true,
+      "objects": {
+        "labels": [
+          {
+            "properties": {
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "27D"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FFFFFF'"
+                      }
+                    }
+                  }
+                }
+              },
+              "labelDisplayUnits": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1000000D"
+                  }
+                }
+              },
+              "labelPrecision": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "categoryLabels": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "annotations": [
+      {
+        "name": "DecisionStudioBasePosition",
+        "value": "{\"x\": 376, \"y\": 104, \"width\": 336, \"height\": 106, \"z\": 10, \"tabOrder\": 10}"
+      }
+    ]
+  },
+  "tableEx": {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+    "name": "6f8818f7a91b44b91cfa",
+    "position": {
+      "x": 248,
+      "y": 658,
+      "z": 10,
+      "height": 312,
+      "width": 1392,
+      "tabOrder": 10
+    },
+    "visual": {
+      "visualType": "tableEx",
+      "query": {
+        "queryState": {
+          "Values": {
+            "projections": [
+              {
+                "field": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DimChannel"
+                      }
+                    },
+                    "Property": "channel"
+                  }
+                },
+                "queryRef": "DimChannel.channel",
+                "nativeQueryRef": "channel"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Orders"
+                  }
+                },
+                "queryRef": "FactOrders.Orders",
+                "nativeQueryRef": "Orders"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Net Sales"
+                  }
+                },
+                "queryRef": "FactOrders.Net Sales",
+                "nativeQueryRef": "Net Sales"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Marketing Spend"
+                  }
+                },
+                "queryRef": "FactOrders.Marketing Spend",
+                "nativeQueryRef": "Marketing Spend"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Contribution After Marketing"
+                  }
+                },
+                "queryRef": "FactOrders.Contribution After Marketing",
+                "nativeQueryRef": "Contribution After Marketing"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Marketing Per Placed Order"
+                  }
+                },
+                "queryRef": "FactOrders.Marketing Per Placed Order",
+                "nativeQueryRef": "Marketing Per Placed Order"
+              },
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Negative Contribution Exposure"
+                  }
+                },
+                "queryRef": "FactOrders.Negative Contribution Exposure",
+                "nativeQueryRef": "Negative Contribution Exposure"
+              }
+            ]
+          }
+        },
+        "sortDefinition": {
+          "sort": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOrders"
+                    }
+                  },
+                  "Property": "Orders"
+                }
+              },
+              "direction": "Descending"
+            }
+          ]
+        }
+      },
+      "visualContainerObjects": {
+        "title": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "text": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Channel economics | date/channel spend only'"
+                  }
+                }
+              },
+              "fontColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#263650'"
+                      }
+                    }
+                  }
+                }
+              },
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "13D"
+                  }
+                }
+              },
+              "fontFamily": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Segoe UI Semibold'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FFFFFF'"
+                      }
+                    }
+                  }
+                }
+              },
+              "transparency": {
+                "expr": {
+                  "Literal": {
+                    "Value": "0D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#DFE4F0'"
+                      }
+                    }
+                  }
+                }
+              },
+              "radius": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "properties": {
+              "top": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "bottom": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "left": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "right": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "drillFilterOtherVisuals": true,
+      "objects": {}
+    },
+    "annotations": [
+      {
+        "name": "DecisionStudioBasePosition",
+        "value": "{\"x\": 24, \"y\": 554, \"width\": 1392, \"height\": 312, \"z\": 10, \"tabOrder\": 10}"
+      }
+    ]
+  },
+  "slicer": {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+    "name": "7a3c7bb6561a62357526",
+    "position": {
+      "x": 248,
+      "y": 116,
+      "width": 690,
+      "height": 80,
+      "z": 10,
+      "tabOrder": 10
+    },
+    "visual": {
+      "visualType": "slicer",
+      "query": {
+        "queryState": {
+          "Values": {
+            "projections": [
+              {
+                "field": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DimDate"
+                      }
+                    },
+                    "Property": "month"
+                  }
+                },
+                "queryRef": "DimDate.month",
+                "nativeQueryRef": "month",
+                "active": true
+              }
+            ]
+          }
+        }
+      },
+      "visualContainerObjects": {
+        "title": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "text": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Month'"
+                  }
+                }
+              },
+              "fontColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#263650'"
+                      }
+                    }
+                  }
+                }
+              },
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "13D"
+                  }
+                }
+              },
+              "fontFamily": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Segoe UI Semibold'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FFFFFF'"
+                      }
+                    }
+                  }
+                }
+              },
+              "transparency": {
+                "expr": {
+                  "Literal": {
+                    "Value": "0D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#DFE4F0'"
+                      }
+                    }
+                  }
+                }
+              },
+              "radius": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "properties": {
+              "top": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "bottom": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "left": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "right": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "drillFilterOtherVisuals": true,
+      "objects": {
+        "data": [
+          {
+            "properties": {
+              "mode": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Dropdown'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "selection": [
+          {
+            "properties": {
+              "strictSingleSelect": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "singleSelect": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "selectAllCheckboxEnabled": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "annotations": [
+      {
+        "name": "DecisionStudioBasePosition",
+        "value": "{\"x\": 24.0, \"y\": 12, \"width\": 690.0, \"height\": 80, \"z\": 10, \"tabOrder\": 10}"
+      }
+    ]
+  },
+  "barChart": {
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+    "name": "bcdfe37e842630efe692",
+    "position": {
+      "x": 248,
+      "y": 334,
+      "z": 10,
+      "height": 300,
+      "width": 688,
+      "tabOrder": 10
+    },
+    "visual": {
+      "visualType": "barChart",
+      "query": {
+        "queryState": {
+          "Category": {
+            "projections": [
+              {
+                "field": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DimChannel"
+                      }
+                    },
+                    "Property": "channel"
+                  }
+                },
+                "queryRef": "DimChannel.channel",
+                "nativeQueryRef": "channel",
+                "active": true
+              }
+            ]
+          },
+          "Y": {
+            "projections": [
+              {
+                "field": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "FactOrders"
+                      }
+                    },
+                    "Property": "Contribution After Marketing"
+                  }
+                },
+                "queryRef": "FactOrders.Contribution After Marketing",
+                "nativeQueryRef": "Contribution After Marketing"
+              }
+            ]
+          }
+        },
+        "sortDefinition": {
+          "sort": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOrders"
+                    }
+                  },
+                  "Property": "Contribution After Marketing"
+                }
+              },
+              "direction": "Descending"
+            }
+          ]
+        }
+      },
+      "objects": {
+        "categoryAxis": [
+          {
+            "properties": {
+              "showAxisTitle": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "properties": {
+              "showAxisTitle": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "visualContainerObjects": {
+        "title": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "text": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Contribution after marketing by channel'"
+                  }
+                }
+              },
+              "fontColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#263650'"
+                      }
+                    }
+                  }
+                }
+              },
+              "fontSize": {
+                "expr": {
+                  "Literal": {
+                    "Value": "13D"
+                  }
+                }
+              },
+              "fontFamily": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Segoe UI Semibold'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FFFFFF'"
+                      }
+                    }
+                  }
+                }
+              },
+              "transparency": {
+                "expr": {
+                  "Literal": {
+                    "Value": "0D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "color": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#DFE4F0'"
+                      }
+                    }
+                  }
+                }
+              },
+              "radius": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "properties": {
+              "show": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "padding": [
+          {
+            "properties": {
+              "top": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "bottom": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "left": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              },
+              "right": {
+                "expr": {
+                  "Literal": {
+                    "Value": "12D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "drillFilterOtherVisuals": true
+    },
+    "annotations": [
+      {
+        "name": "DecisionStudioBasePosition",
+        "value": "{\"x\": 24, \"y\": 230, \"width\": 688, \"height\": 300, \"z\": 10, \"tabOrder\": 10}"
+      }
+    ]
+  }
+}

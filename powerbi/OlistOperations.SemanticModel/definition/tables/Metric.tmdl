@@ -1,0 +1,10 @@
+table Metric
+
+	column Label
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Label
+
+	partition Metric = m
+		mode: import
+		source = #table(type table [Label=text],{{"Merchandise sales"},{"Delivered orders"},{"Late orders"}})

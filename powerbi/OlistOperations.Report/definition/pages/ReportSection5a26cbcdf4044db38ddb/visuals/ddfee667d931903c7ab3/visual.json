@@ -1,0 +1,279 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "ddfee667d931903c7ab3",
+  "position": {
+    "x": 248,
+    "y": 654,
+    "width": 1392,
+    "height": 310,
+    "z": 10,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "order_id"
+                }
+              },
+              "queryRef": "Orders.order_id",
+              "nativeQueryRef": "order_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "purchase_date"
+                }
+              },
+              "queryRef": "Orders.purchase_date",
+              "nativeQueryRef": "purchase_date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "customer_state"
+                }
+              },
+              "queryRef": "Orders.customer_state",
+              "nativeQueryRef": "customer_state"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "basket_band"
+                }
+              },
+              "queryRef": "Orders.basket_band",
+              "nativeQueryRef": "basket_band"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "delivery_outcome"
+                }
+              },
+              "queryRef": "Orders.delivery_outcome",
+              "nativeQueryRef": "delivery_outcome"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "merchandise_cents"
+                }
+              },
+              "queryRef": "Orders.merchandise_cents",
+              "nativeQueryRef": "merchandise_cents"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "eligible_delivery_seconds"
+                }
+              },
+              "queryRef": "Orders.eligible_delivery_seconds",
+              "nativeQueryRef": "eligible_delivery_seconds"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Order evidence | cents and seconds are labelled source units'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#263650'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFE4F0'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {}
+  }
+}

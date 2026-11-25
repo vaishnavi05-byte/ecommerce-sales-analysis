@@ -1,222 +1,72 @@
-# E-commerce Sales and Delivery Analysis
+# Olist Operations Studio
 
-## Project status
-SQL analysis and interactive Excel dashboard completed.
+**Five interactive native Power BI pages, 18 DAX measures and the original Excel dashboard, built from the project's audited MySQL order export.**
 
-## Overview
-This personal portfolio project explores historical
-e-commerce orders to understand sales trends, product
-category performance, customer locations, and delivery delays.
+[Download the native PBIX](powerbi/OlistOperationsStudio.pbix) · [Editable Power BI project](powerbi/OlistOperations.pbip) · [Dashboard guide](docs/dashboard-guide.md) · [Validation](docs/native-validation.json)
 
-## Business questions
-1. How do sales and order counts change month by month?
-2. Which product categories generate the most sales?
-3. Which customer states contribute the most sales?
-4. What percentage of delivered orders arrive late?
+![Commerce overview](docs/images/Commerce%20overview.png)
 
-## Tools
-- MySQL Workbench: importing, checking, and analysing data
-- Microsoft Excel: dashboard and visualisation
-- GitHub: project documentation and file history
+## Explore the dashboards
 
-## Dataset
-Brazilian E-Commerce Public Dataset by Olist.
-The dataset contains historical orders from 2016–2018.
+The original single Excel dashboard has been complemented by an original, five-page Power BI suite. Plum, lilac and mint colours, rounded chart panels, a persistent navigation rail and compact KPI cards keep the pages consistent.
 
-Source:
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+| Page | Business question and interaction |
+|---|---|
+| Commerce overview | How do merchandise sales and demand vary? Switch sales/orders/late orders; select a month or destination state. |
+| Delivery watch | Where does historical lateness exceed a chosen benchmark? Change the late-rate target and inspect the eligible denominator and missing dates. |
+| State explorer | Which destinations deserve investigation? Adjust the minimum eligible-order sample and compare rates alongside sales and elapsed delivery days. |
+| Basket economics | How do basket sizes differ in volume, order value and delivery outcomes? Filter basket bands and inspect the underlying counts. |
+| Order explorer | Which orders support the selected result? Filter by state, date and delivery outcome, then inspect the actual order IDs. |
 
-## Planned deliverables
-- Data quality checks
-- SQL analysis scripts
-- Excel dashboard
-- Findings, limitations, and recommendations
+These are analytical report pages in Power BI Desktop. The repository does not claim a hosted Power BI Service deployment.
 
-## Results
-### Delivery performance
+Open **[OlistOperationsStudio.pbix](powerbi/OlistOperationsStudio.pbix)** in current Power BI Desktop; imported snapshot data is included. For the editable PBIP, run `python scripts/configure_data_path.py`, open the project and select **Home → Refresh**.
 
-| Metric | Result |
-|---|---:|
-| Eligible delivered orders | 96,470 |
-| Late orders | 6,534 |
-| On-time orders | 89,936 |
-| Late-delivery rate | 6.77% |
-| Average purchase-to-delivery time | 12.56 days |
+In Desktop, Ctrl-click navigation/reset buttons; click chart bars normally. Selecting a chart filters its page; click the same item again to clear it. Reset clears current-page slicers, not chart selections or every page. Filters are intentionally page-specific. Tables scroll and retain full order evidence.
 
-Scope: Delivered orders with the required dates and valid
-date sequence. Eight delivered orders with missing actual
-delivery dates were excluded.
+## Source and validated scope
 
-Late means the actual delivery calendar date was after
-the estimated delivery calendar date.
+Source: [Brazilian E-commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), historical 2016–2018 data. The original MySQL scripts validate **99,441 orders and 112,650 item rows**. Items are aggregated before order joins to avoid multiplying order counts and sales.
 
-Average delivery time measures elapsed time from purchase
-to customer delivery, including fractional days.
+The committed `data/processed/dashboard_orders.csv` is the authoritative SQL export for this dashboard. It contains one row per **delivered** order. The original raw Kaggle files are not bundled here. This suite does not report cancellation, customer retention, product profit, reviews or payment attribution from fields absent from that export.
 
-## Initial orders data checks
-- Imported rows: 99,441
-- Unique order IDs: 99,441
-- Missing order IDs: 0
-- Missing customer IDs: 0
-
-## Orders data quality checks
-
-| Check | Result |
-|---|---:|
-| Imported rows | 99,441 |
-| Unique order IDs | 99,441 |
-| Missing order IDs | 0 |
-| Missing customer IDs | 0 |
-| Missing actual delivery dates | 2,965 |
-| Missing purchase dates | 0 |
-| Missing estimated delivery dates | 0 |
-| Unexpected formats across the three checked date fields | 0 |
-| Actual deliveries before purchase | 0 |
-| Estimated delivery dates before purchase date | 0 |
-
-### Flagged inconsistencies
-- 8 delivered orders have no actual delivery date.
-- 6 cancelled orders have an actual delivery date.
-- These records are preserved in the raw table.
-
-### Planned analysis rule
-Delivery metrics will use delivered orders with valid
-required dates. Excluded records will be reported.
-## Monthly delivery findings
-
-- March 2018 recorded 1,328 late orders among 7,003
-  eligible orders: a late-delivery rate of 18.96%.
-- This was 12.19 percentage points above the overall
-  late-delivery rate of 6.77%.
-- September 2016 recorded 100% late delivery, but had
-  only one eligible order, limiting interpretation.
-- Months are based on purchase date.
-- Further analysis is needed to investigate the
-  locations and product categories associated with delays.
-
-  ## Customer and join validation
-
-- Customer records: 99,441.
-- Distinct shoppers: 96,096.
-- No missing customer IDs, shopper IDs, or states.
-- Joining orders to customers preserved 99,441 orders.
-- No orders lacked a matching customer record.
-
-## State delivery findings
-
-| State | Eligible orders | Late orders | Late rate |
-|---|---:|---:|---:|
-| SP | 40,494 | 1,820 | 4.49% |
-| RJ | 12,350 | 1,495 | 12.11% |
-| MA | 717 | 125 | 17.43% |
-| AL | 397 | 85 | 21.41% |
-
-- RJ combined substantial order volume with an above-average
-  late-delivery rate.
-- SP had the largest number of late orders, despite a
-  below-average late rate.
-- SP and RJ together accounted for 50.73% of late orders.
-- Further analysis is needed to explain these differences.
-
-[View state delivery results](data/processed/state_delivery_performance.csv)
-
-## Sales analysis
-
-### Data validation
-- Imported 112,650 items across 98,666 order IDs.
-- No missing required item identifiers.
-- No missing or unexpected price or freight formats.
-- Every item matched an order.
-- All 96,478 delivered orders had item records.
-
-### Delivered-order results
-
-| Metric | Result |
+| Full dashboard snapshot | Value |
 |---|---:|
 | Delivered orders | 96,478 |
-| Items sold | 110,197 |
-| Merchandise sales value | 13,221,498.11 |
-| Freight value | 2,198,275.64 |
-| Average order value, excluding freight | 137.04 |
+| Merchandise sales, excluding freight | 13,221,498.11 source monetary units |
+| Delivered items | 110,197 |
+| Average order value | 137.04 |
+| Eligible delivery orders | 96,470 |
+| Late orders | 6,534 |
+| Late-delivery rate | 6.77% |
+| Average elapsed delivery time | 12.56 days |
+| Missing actual delivery dates | 8 |
 
-### Monthly findings
-- November 2017 merchandise value was 987,765.37,
-  up 52.37% from October.
-- Delivered order count increased 62.77%, while AOV
-  declined from 144.76 to 135.51.
-- May 2018 generated merchandise value of 977,544.69
-  from 6,749 delivered orders, with AOV of 144.84.
+Late means the actual delivery **calendar date** was after the estimated calendar date. Delivery eligibility was calculated in SQL using required dates and valid sequences. Rates use eligible orders; the eight missing actual delivery dates remain visible and are excluded from delivery denominators. Elapsed days include fractional days. Boundary months are retained and may be incomplete; they are not presented as comparable growth periods.
 
-Sales calculations include all delivered orders with
-item records. Delivery-time calculations additionally
-require valid delivery dates.
+Merchandise sales exclude freight and are not profit. No cost or margin is invented. A target is an adjustable descriptive benchmark: `max(0, late orders − eligible orders × target rate)` is the order-equivalent gap, potentially fractional, not a predicted number of prevented delays or achieved savings.
 
-## Product category findings
+## Reproduce and verify
 
-- Health and beauty led merchandise value at 1,233,131.72,
-  representing 9.33% of the total.
-- The top five categories contributed 39.83%.
-- 610 products had no category and 13 products lacked
-  an English translation.
-- Explicit fallback labels retained these records.
-- Unknown category contributed 170,726.63, or 1.29%.
+Python 3.11+; standard library only:
 
-## Sales by customer state
+```powershell
+python scripts/build_dashboards.py
+python scripts/validate_native_source.py
+python scripts/verify_native_results.py
+```
 
-| State | Merchandise value | Sales share |
-|---|---:|---:|
-| SP | 5,067,633.16 | 38.33% |
-| RJ | 1,759,651.13 | 13.31% |
-| MG | 1,552,481.83 | 11.74% |
+The builder preserves the unchanged SQL export, converts money to integer cents and derives explicit basket bands and delivery outcomes. It generates the editable model and report source, not a fabricated PBIX. The PBIX is saved by Power BI Desktop after refresh.
 
-These three states contributed 63.38% of merchandise value.
+**329 numeric comparisons** reconcile actual local Power BI engine results with the SQL CSV export: totals, 27 states, purchase months, basket sizes, a filtered SP/10% target example and the minimum-sample guard. See [the executed DAX queries](tests/native_checks.dax), [saved engine results](docs/native-dax-results.json), [build fingerprint](docs/build-validation.json) and [native reconciliation](docs/native-validation.json). CI rechecks saved evidence and source bindings; it does not launch Desktop. The official authoring CLI report separately records any unavailable-schema warnings.
 
-RJ contributed 13.31% of merchandise value and had a
-12.11% late-delivery rate among eligible delivery orders,
-making it a priority for further investigation.
+The original **[Excel workbook](dashboard/Ecommerce_Analysis_Dashboard.xlsx)** and [23 MySQL scripts](sql) remain available. The workbook retains its PivotTables, PivotCharts and slicers.
 
-## Interactive Excel Dashboard
+## Gallery
 
-![E-commerce dashboard overview](dashboard/dashboard_overview.png)
+![Delivery watch](docs/images/Delivery%20watch.png)
+![State explorer](docs/images/State%20explorer.png)
+![Basket economics](docs/images/Basket%20economics.png)
+![Order explorer](docs/images/Order%20explorer.png)
 
-[Open the Excel workbook file](dashboard/Ecommerce_Analysis_Dashboard.xlsx)
-
-The dashboard combines five headline metrics with monthly sales and Top 10 customer-state charts. Customer-state and purchase-year slicers filter the metrics and charts together.
-
-### How to view the dashboard
-
-1. At the top of this repository, select Code → Download ZIP.
-2. Extract the downloaded ZIP.
-3. Open dashboard/Ecommerce_Analysis_Dashboard.xlsx in desktop Microsoft Excel.
-4. Use the Customer state and Purchase year slicers to explore the results.
-5. Use each slicer's clear-filter button to return to the overall view.
-
-The workbook contains saved data, so the dashboard can be explored before configuring a refresh.
-
-### Metric definitions
-
-- Merchandise sales value: sum of item prices for delivered orders, excluding freight.
-- Delivered orders: 96,478 orders in the unfiltered dataset.
-- Average order value: merchandise sales value divided by delivered orders.
-- Late-delivery rate: late orders divided by orders eligible for delivery analysis. Delivery is late when its calendar date falls after the estimated delivery date.
-- Average delivery days: total eligible delivery seconds divided by eligible orders and 86,400.
-
-Delivery analysis includes 96,470 eligible orders. Eight delivered orders with missing actual delivery dates remain in sales totals and are excluded from delivery metrics.
-
-### Refresh on another computer
-
-The Power Query source currently points to the CSV location on the original computer. To configure it:
-
-1. In Excel, select Data → Queries & Connections.
-2. Right-click OrdersData and select Edit.
-3. In Power Query Editor, select Home → Advanced Editor.
-4. Find File.Contents(...) and replace only the file path inside its quotation marks with the full local path to data/processed/dashboard_orders.csv.
-5. Select Done → Close & Load.
-6. In Excel, select Data → Refresh All.
-
-Refreshing Excel reloads the CSV export.
-
-### Dashboard source files
-
-- [Order-level CSV](data/processed/dashboard_orders.csv)
-- [SQL dashboard view](sql/23_create_dashboard_view.sql)
+Screenshots are captures of the actual Power BI Desktop reports. A Desktop recovery notification may appear above the report canvas; it is not part of the dashboard.

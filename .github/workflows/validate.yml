@@ -1,0 +1,21 @@
+name: Validate Olist Operations Studio
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild editable report and normalized data
+        run: python scripts/build_dashboards.py
+      - name: Validate native source field bindings
+        run: python scripts/validate_native_source.py
+      - name: Reconcile saved native DAX evidence
+        run: python scripts/verify_native_results.py

@@ -1,0 +1,265 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "623a2d02b8bd6ef113b2",
+  "position": {
+    "x": 248,
+    "y": 654,
+    "width": 1392,
+    "height": 310,
+    "z": 10,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "purchase_month"
+                }
+              },
+              "queryRef": "Orders.purchase_month",
+              "nativeQueryRef": "purchase_month"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "Eligible Deliveries"
+                }
+              },
+              "queryRef": "Orders.Eligible Deliveries",
+              "nativeQueryRef": "Eligible Deliveries"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "Late Orders"
+                }
+              },
+              "queryRef": "Orders.Late Orders",
+              "nativeQueryRef": "Late Orders"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "Late Rate"
+                }
+              },
+              "queryRef": "Orders.Late Rate",
+              "nativeQueryRef": "Late Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "Average Delivery Days"
+                }
+              },
+              "queryRef": "Orders.Average Delivery Days",
+              "nativeQueryRef": "Average Delivery Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Orders"
+                    }
+                  },
+                  "Property": "Missing Actual Dates"
+                }
+              },
+              "queryRef": "Orders.Missing Actual Dates",
+              "nativeQueryRef": "Missing Actual Dates"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Supporting evidence | ratios recompute in the current selection'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#263650'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFE4F0'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {}
+  }
+}
