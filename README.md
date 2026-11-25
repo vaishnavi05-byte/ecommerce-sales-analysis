@@ -6,6 +6,8 @@
 
 ![Commerce overview](docs/images/Commerce%20overview.png)
 
+**Verified on Windows and Linux:** [GitHub Actions passed](https://github.com/vaishnavi05-byte/ecommerce-sales-analysis/actions/runs/45723282094) for the functional release `9f1e51d`. The workflow rebuilds the source and checks saved native evidence; it does not launch Power BI Desktop.
+
 ## Explore the dashboards
 
 The original single Excel dashboard has been complemented by an original, five-page Power BI suite. Plum, lilac and mint colours, rounded chart panels, a persistent navigation rail and compact KPI cards keep the pages consistent.

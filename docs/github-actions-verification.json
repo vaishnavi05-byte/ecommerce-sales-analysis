@@ -1,0 +1,19 @@
+{
+  "id": 45723282094,
+  "sha": "9f1e51da8addf72e6974cccf23c6e40a16391be3",
+  "url": "https://github.com/vaishnavi05-byte/ecommerce-sales-analysis/actions/runs/45723282094",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "validate (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "validate (windows-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

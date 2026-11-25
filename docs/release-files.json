@@ -1,0 +1,11 @@
+{
+  "native_file": "powerbi/OlistOperationsStudio.pbix",
+  "bytes": 4313098,
+  "sha256": "089e3646f272a9f8b82c46ff11077f70132e5a081e9008b449bfc74885c31a0b",
+  "analytical_pages": 5,
+  "DAX_measures": 18,
+  "saved_in": "Power BI Desktop 2.160.1151.0",
+  "archive_CRC_validated": true,
+  "imported_DataModel_included": true,
+  "remote_git_blob_matches_local": true
+}
